@@ -1,0 +1,265 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	color:#000;
+}
+ 
+
+
+ 
+.navbar-default {
+  background-color: #e74c3c;
+  border-color: #c0392b;
+}
+.navbar-default .navbar-brand {
+  color: #000000;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #ffbbbc;
+}
+.navbar-default .navbar-text {
+  color: #000000;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #000000;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ffbbbc;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ffbbbc;
+  background-color: #c0392b;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #ffbbbc;
+  background-color: #c0392b;
+}
+.navbar-default .navbar-toggle {
+  border-color: #c0392b;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #c0392b;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #000000;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #000000;
+}
+.navbar-default .navbar-link {
+  color: #000000;
+}
+.navbar-default .navbar-link:hover {
+  color: #ffbbbc;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #000000;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffbbbc;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffbbbc;
+    background-color: #c0392b;
+  }
+}
+/*-------------------------------------------------------------------------------------------*/
+ html, body {width:100%;height:50%;} /*非常重要的样式让背景图片100%适应整个屏幕*/  
+        .bg {display: table;width: 100%;height: 100%;padding: 100px 0;text-align: center;color:#000;background: url(http://www.xiandanke.cn/Image/intro-bg.jpg) no-repeat bottom center;background-color: #59acac;background-size: cover;}  
+        .my-navbar {padding:20px 0;transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;}  
+        .my-navbar a{background:transparent !important;color:#fff !important}  
+        .my-navbar a:hover {color: #000!important;background:transparent;outline:0}  
+        .my-navbar a {transition: color 0.5s ease-in-out;}/*-webkit-transition ;-moz-transition*/  
+        .top-nav {padding:0;background: #59ACAC;}  
+        button.navbar-toggle {background-color:#fbfbfb;}/*整个背景都是transparent透明的，会看不到，所以再次覆盖一下*/  
+        button.navbar-toggle > span.icon-bar {background-color:#dedede}  
+
+/*-------------------------------------------------------------------------------------------*/
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ecf0f1;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #020202;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #020202;
+    background-color: #fdfdfd;
+  }
+}
+#arrow:hover{
+	transform:rotate(180deg);
+}
+.dropdown-menu > li > a:hover {
+    background: green;
+}
+.dropdown-menu > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857;
+    color: #333;
+    white-space: nowrap;
+}
+/*--------------------------------*/
+.biao{
+	color:#59acac;
+	font-size:22px;
+	margin-left:70px;
+	margin-top:15px;
+	list-style:none;
+	display:inline-block;
+	margin-left:25px;
+	margin-top:25px;
+	}
+.uuli{
+	width:161px;
+	height:50px;
+	background-color:#fff;
+	color:#59acac;
+	font-weight:bold;
+	font-size:16px;
+	text-align:center;
+	line-height:50px;
+}
+
+.biao:hover .uuli{
+	background-color:#FF8D1B;
+	color:#FFF;
+	font-weight:bold;
+	font-size:16px;
+	
+}
+.back{
+	height:514px;
+	width:3px;
+	background-color:#59acac;
+	margin-left:530px;
+	margin-top:-570px;
+	
+	
+}
+.listgi{
+	height:40px;
+	border:#59acac;
+	border: 2px;
+}
+
+#lli1{
+	color:#000; font-size:16px;
+	 font-weight:bold;
+	  border-color:#fff;
+	
+
+}
+#lli2{
+	background-color: #fff;;
+	
+
+}
+#lli3{
+	background-color: #fff;;
+	
+
+}#lli4{
+	background-color: #fff;;
+	
+
+}#lli5{
+	background-color: #fff;;
+	
+
+}#lli6{
+	background-color: #fff;;
+	
+
+}#lli7{
+	background-color: #fff;;
+	
+
+}
+#lli8{
+	background-color: #fff;;
+}
+#lli9{
+	background-color: #fff;;
+}#lli10{
+	background-color: #fff;;
+}
+#lli1:hover li{
+	background-color: #ADD6D6;
+	
+}
+#lli2:hover li{
+	background-color: #ADD6D6;
+	
+}
+#lli3:hover li{
+	background-color: #ADD6D6;
+	
+}
+#lli4:hover li{
+	background-color: #ADD6D6;
+
+}
+#lli5:hover li{
+	background-color: #ADD6D6;
+	
+}
+#lli6:hover li{
+	background-color: #ADD6D6;
+	
+}
+#lli7:hover li{
+	background-color: #ADD6D6;
+	
+}#lli8:hover li{
+	background-color: #ADD6D6;
+}
+#lli9:hover li{
+	background-color: #ADD6D6;
+}
+#lli10:hover li{
+	background-color: #ADD6D6;
+}
+#yan1{
+       color:#000;
+}
+#yan1{
+       color:#000;
+}
+#yan1{
+       color:#000;
+}
+#yan1{
+       color:#000;
+}
+ul:hover .yan{
+	color: #fff;;
+}
+.bian{
+	margin-left:40px;
+	margin-top:15px;
+	list-style:none;
+	display:inline-block;
+	
+	margin-top:25px;
+}
+

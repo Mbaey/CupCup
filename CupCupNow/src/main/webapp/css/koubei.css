@@ -1,0 +1,52 @@
+#header{
+	width:1000px;
+	margin:0 auto;
+}
+header{
+	height: 72px;
+	width:1000px;
+	line-height: 72px;
+	margin:0 auto;
+}
+header ul{
+	list-style:none;
+	margin:0 auto;
+}
+li{
+	list-style:none;
+}
+header ul li{
+	float:left;
+	margin-left: 32px;
+	margin-right: 32px;
+}
+header ul li:nth-child(1){
+	margin-left:300px;
+}
+header ul li:nth-child(1) img{
+	margin-top: 20px;
+}
+header ul li:nth-child(2){
+	margin-left: 40px;
+}
+
+*{
+	margin:0;
+	padding:0;
+}
+#section{
+	width:1000px;
+	margin:0 auto;
+}
+section{
+	height: 2820px;
+	width:1000px;
+	line-height: 72px;
+	margin:0 auto;
+}
+
+.box1{
+	height:300px;
+	margin-top:50px;
+	border-bottom:1px solid #E5E5E5;
+}

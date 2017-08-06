@@ -1,0 +1,537 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset=utf-8>
+        <title>CupCup</title>
+       	<script src="bootstrap/js/jquery.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/booNavigation.css">
+        <link rel="stylesheet" href="css/medile.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style type="text/css">
+     a:hover{
+		color:#ef4238;
+	
+	}
+	a:active{ color: #969; }
+	a:link {
+	text-decoration: none;
+	}
+	a:visited {
+	text-decoration: none;
+	}
+	a:hover {
+	text-decoration: none;
+	}
+	a:active {
+	text-decoration: none;
+	}   
+	input:focus {
+    color: #fff;
+     border: 1px solid #ef4238;
+     background-color: #ef4238;
+    }
+    footer{
+	width: 100%;
+	height: 300px;
+	background-color: #EAEAEA;
+    }
+
+   .div1 ul li{
+	display: inline;
+	list-style-type:none;
+	font-size: 15px;
+    }
+   
+	 </style>
+	  
+
+
+    </head>
+
+    <body>
+    <div style="width:100%; background-color: #FFF; height:60px; border-bottom: 1px solid  #CCC; border-bottom-style:dashed;">
+    <a href="#" class="tou">联系我们</a>
+    <a href="#" class="tou">加入我们</a>
+    <a href="#" class="tou">友情链接</a>
+    
+    <div class="col-lg-6" >
+				<div class="input-group" style="width:300px; margin-left:600px; margin-top:15px;">
+					<input id="text" name="text" placeholder="请搜索你想要查询的电影" style="border-radius:20px; border-color:#fff; outline-style: none;">
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="button" style="border-color:#CCC;border-radius:90px; height:40px; width:40px; outline-style: none; border-style:dashed;">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+					</span>
+				</div>
+			</div>
+		</div>
+        
+    <div class="dropdown" style=" list-style: none; float:right; margin-right:20px; margin-top:-53px;">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+				<img src="img/97.png" class="img-circle" alt="用户" style="height:50px; width:50px;">
+					 <b class="caret"></b>
+				</a>
+               <ul id="cunzai" class="dropdown-menu" style="background-color: #fff; color:#ef4238; width:30px; margin-right:100px;">
+						<li style="width:30px; margin-right:100px;">
+						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" style="background-color:#fff; width:40px; margin-left:1px; height:20px; border-color:#fff; margin-top:-15px; color:#ef4238;"><span class="glyphicon glyphicon-home"></span> 登入</button></li>
+						<li class="divider"></li>
+						 <li style="width:100%;width:30px; margin-right:100px;">
+						<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1" style="background-color:#fff; width:40px;; margin-left:1px; height:20px; border-color:#FFF; margin-top:-15px; color:#ef4238;"><span class="glyphicon glyphicon-user"></span> 注册</button></li>
+						 
+						
+					</ul>
+					
+				 <ul  id="xiaoshi" class="dropdown-menu" style="background-color: #fff; color:#ef4238; width:30px; margin-right:100px;">
+					<li style="width:30px; margin-right:100px;">
+					<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" style="background-color:#fff; width:40px; margin-left:1px; height:20px; border-color:#fff; margin-top:-15px; color:#ef4238;"><span class="glyphicon glyphicon-home"></span>主页</button></li>
+					<li class="divider"></li>
+					 <li style="width:100%;width:30px; margin-right:100px;">
+					<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1" style="background-color:#fff; width:40px;; margin-left:1px; height:20px; border-color:#FFF; margin-top:-15px; color:#ef4238;"><span class="glyphicon glyphicon-user"></span> 注销</button></li>
+				</ul>      
+				  
+				</div>
+                
+    </div>
+    <div style="height:100px; background-color:#FFF">  <img src="img/02.png" alt="cup cup" style="height:90px; width:230px; margin-top:5px; margin-left:130px;"> </div>
+    
+<div class="wrapper" >
+            <nav id="booNavigation" class="booNavigation">
+                <ul>
+                    <li class="navItem">
+                     <a href="#" title="First Item"><span>电影首页</span></a>
+                    </li>
+
+                    <li class="navItem">
+                        <a href="#" title="Second Item"><span>电影分类</span></a>
+                        <ul class="navContent">
+                            <li>
+                                <ul>
+                                    <li><a href="#" title="Boo the cat">动 画</a><li/>
+                                    <li><a href="#" title="The invisible cat">运 动</a><li/>
+                                    <li><a href="#" title="The amazing cat">家 庭</a><li/>
+                                    <li><a href="#" title="Play with Boo the cat">古 装</a><li/>
+                                    <li><a href="#" title="Play with Boo the cat">武 侠</a><li/>
+                                    <li><a href="#" title="Play with Boo the cat">奇 幻</a><li/>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li><a href="#" title="Pictures of Boo">爱 情</a><li/>
+                                    <li><a href="#" title="The amazing cat">悬 疑</a><li/>
+                                    <li><a href="#" title="Boo the cat">剧 情</a><li/>
+                                    <li><a href="#" title="Boo the cat">纪 录 片</a><li/>
+                                    <li><a href="#" title="Boo the cat">惊 悚</a><li/>
+                                    <li><a href="#" title="Boo the cat">动 作</a><li/>
+                                    <li><a href="#" title="Boo the cat">科 幻</a><li/>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li><a href="#" title="The amazing cat">传 记</a><li/>
+                                    <li><a href="#" title="Boo the cat">歌 舞</a><li/>
+                                    <li><a href="#" title="The invisible cat">喜 剧</a><li/>
+                                    <li><a href="#" title="Pictures of Boo">战 争</a><li/>
+                                    <li><a href="#" title="Pictures of Boo">犯 罪</a><li/>
+                                    <li><a href="#" title="Pictures of Boo">冒 险</a><li/>
+                                     <li><a href="#" title="Pictures of Boo">恐 怖</a><li/>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="navItem">
+                        <a href="#" title="Third Item"><span>电影榜单</span></a>
+                        <ul class="navContent" style="width:250px;margin-left:450px;" >
+                            <li >
+                                <ul>
+                                    <li style="margin-left:15px; width:200px;"><a href="#" title="Boo the cat">热度排行</a><li/>
+                                    <li style="margin-left:15px; width:200px;"><a href="#" title="The invisible cat">搜索排行</a><li/>
+                                    <li style="margin-left:15px; width:200px;"><a href="#" title="The amazing cat">TOP100</a><li/>
+                                    <li style="margin-left:15px; width:200px;"><a href="#" title="The amazing cat">最新上映</a><li/>
+                                    <li style="margin-left:15px; width:200px;"><a href="#" title="Play with Boo the cat">正在热播</a><li/>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <li class="navItem">
+                     <a href="#" title="First Item"><span>电影资讯</span></a>
+                    </li>
+                      <li class="navItem">
+                     <a href="#" title="First Item"><span>热门预告</span></a>
+                    </li>
+                     <li class="navItem">
+                     <a href="#" title="First Item"><span>观影指南</span></a>
+                    </li>
+                </ul>
+                
+            </nav>
+
+        </div>
+        <div id="myCarousel" class="carousel slide" style="margin-right:-10px;">
+	<!-- 轮播（Carousel）指标 -->
+	<ol class="carousel-indicators">
+		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+		<li data-target="#myCarousel" data-slide-to="1"></li>
+		<li data-target="#myCarousel" data-slide-to="2"></li>
+	</ol>   
+	<!-- 轮播（Carousel）项目 -->
+	<div class="carousel-inner">
+		<div class="item active">
+			<img src="img/4.jpg" alt="First slide"width="100%;" height="100%;">
+			<div class="carousel-caption"><div class="bantou"> <h2>速度与激情系列</h2>
+            <h2>-----------------------------------------</h2>
+            <p style="color:#FFF;">《速度与激情》是罗伯·科恩执导的赛车题材的动作犯罪电影。</p><p> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;该剧讲述了卧底探员布莱恩凭借出色的车技赢得了帮派老大多米尼克的欣赏和信任，同时也赢得了多米尼克的妹妹米娅的芳心。他和这个帮派老大逐渐建立了友谊，两人成了互相尊重、互相信任的好朋友。</p><p>受到友情和爱情的双重羁绊，布莱恩陷入了困境。</p>
+            <button type="button" class="btn btn-default btn-sm" style="margin-top:10px; float:right; margin-right:10px;">
+          <span class="glyphicon glyphicon-play-circle"></span> 详细信息
+        </button>
+            </div>
+            </div>
+		</div>
+		<div class="item">
+			<img  src="img/6 (2).jpg" alt="Second slide" width="100%;" height="100%;">
+			<div class="carousel-caption"><div class="bantou">
+             <h2>冰川时代4</h2>
+            <h2>-----------------------------------------</h2>
+            <p style="color:#FFF;">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;《冰川时代4》电影由史蒂夫·马蒂诺执导，约翰·雷吉扎莫、雷·罗马诺、等共同献声配音，于2012年7月27日在中国上映。</p><p>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;该片讲述地球因为冰山上的一颗松果引发的蝴蝶效应，而分裂成了七大洲四大洋，史前动物曼尼、希德和迭戈只好重新踏上全新的大冒险之旅。它们途中遇上希德的怪姥姥和一群疯狂的海盗，为它们的冒险之旅增添不少的麻烦。</p>
+            <button type="button" class="btn btn-default btn-sm" style="margin-top:10px; float:right; margin-right:10px;">
+          <span class="glyphicon glyphicon-play-circle"></span> 详细信息
+        </button>
+            </div>
+            </div>
+		</div>
+		<div class="item">
+			<img src="img/7.jpg" alt="Third slide"width="100%;" height="100%;">
+			<div class="carousel-caption"><div class="bantou">
+                    <h2>招魂2</h2>
+            <h2>-----------------------------------------</h2>
+            <p style="color:#FFF;">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;《招魂2》是由美国新线电影公司发行的恐怖片，由温子仁执导，维拉·法米加、帕特里克·威尔森、弗兰西丝·奥康纳联合主演。影片于2016年6月10日在美国上映</p><p>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;《招魂2》改编自真实事件，时间背景设定于1977年的英国伦敦的北郊恩菲尔德，讲述了艾德和罗琳夫妇帮助一位单亲妈妈和她的四个孩子驱魔时遭遇的种种危机的故事</p>
+            <button type="button" class="btn btn-default btn-sm" style="margin-top:10px; float:right; margin-right:10px;">
+          <span class="glyphicon glyphicon-play-circle"></span> 详细信息
+        </button>
+            </div>
+            </div>
+		</div>
+	</div>
+	<!-- 轮播（Carousel）导航 -->
+	<a class="carousel-control left" href="#myCarousel" 
+	   data-slide="prev">&lsaquo;</a>
+	<a class="carousel-control right" href="#myCarousel" 
+	   data-slide="next">&rsaquo;</a>
+</div> 
+        
+<div class="zhengti">
+        <p class="biao" id="section-1" style="width:100%;">
+	   <span style="color:#ef4238;"> <img  src="img/4.png" alt="cup" style="width:30px; height:40px; margin-left:-270px;">正在热映 <span class="glyphicon glyphicon-chevron-right"></span></span>
+	   <span style="float:right; color:#ef4238;margin-right:-30px; margin-top:10px;"> <img src="img/king21.png" alt="cup" style="width:40px; height:30px; ">今日票房</span>
+	   </p>
+		
+		<br>
+	<ul  class="biao" style="margin-left:-250px;" >
+		   <div class="w3l-movie-gride-agile w3l-movie-gride-agile1"><li><img  title="album-name" class="img-responsive"  src="img/01.jpg" alt="cup"></li>
+		  <a href="#"> <li class="uuli"> 购 票</li></a></div>
+	</ul>
+	<ul  class="biao">
+		   <div class="w3l-movie-gride-agile w3l-movie-gride-agile1"><li><img  title="album-name" class="img-responsive"  src="img/02.jpg" alt="cup"></li>
+		  <a href="#"> <li class="uuli"> 购 票</li></a></div>
+	</ul>
+	<ul  class="biao">
+		   <div class="w3l-movie-gride-agile w3l-movie-gride-agile1"><li><img src="img/03.jpg" alt="cup"></li>
+		   <a href="#"> <li class="uuli"> 购 票</li></a></div>
+	</ul>
+	<ul  class="biao">
+		   <div class="w3l-movie-gride-agile w3l-movie-gride-agile1"><li><img src="img/04.jpg" alt="cup"></li>
+		   <a href="#"> <li class="uuli"> 购 票</li></a></div>
+	</ul><br>
+	<ul  class="biao" style="margin-left:-250px;">
+		   <div class="w3l-movie-gride-agile w3l-movie-gride-agile1"><li><img src="img/05.jpg" alt="cup"></li>
+		   <a href="#"> <li class="uuli"> 购 票</li></a></div>
+	</ul>
+	<ul  class="biao">
+		   <div class="w3l-movie-gride-agile w3l-movie-gride-agile1"><li><img src="img/06.jpg" alt="cup"></li>
+		   <a href="#"> <li class="uuli"> 购 票</li></a></div>
+	</ul>
+	<ul  class="biao">
+		   <div class="w3l-movie-gride-agile w3l-movie-gride-agile1"><li><img src="img/07.jpg" alt="cup"></li>
+		   <a href="#"> <li class="uuli"> 购 票</li></a></div>
+	</ul>
+	<ul  class="biao">
+		   <div class="w3l-movie-gride-agile w3l-movie-gride-agile1"><li><img src="img/08.jpg" alt="cup"></li>
+		  <a href="#"> <li class="uuli"> 购 票</li></a></div>
+	</ul>
+		
+		<ul class="list-group" style="width:340px; height:440px; margin-left:580px; margin-top:-600px; border-color:#ef4238; text-align:left;">
+	<div id="lli1"><li class="list-group-item" style="color:#000; font-size:16px; border-color:#fff; margin-bottom:5px;text-align:left; font-weight:100;"><img src="img/king.png"> 悟空传
+	     <span class="badge" style=" background-color: #ef4238;margin-right:10px;">2020.26万</span></li></div>
+	<div id="lli2"><li class="list-group-item" style="color:#000; font-size:16px; border-color:#fff; margin-bottom:5px;text-align:left;"><img src="img/king2.png"> 神偷奶爸3
+	      <span class="badge" style=" background-color: #ef4238; margin-right:10px;">1791.81万</span></li></div>
+	<div id="lli3"><li class="list-group-item" style="color:#000; font-size:16px;border-color:#fff; margin-bottom: 5px;text-align:left;"><img src="img/king3.png"> 大护法 
+	      <span class="badge" style=" background-color: #ef4238;  margin-right:10px;">443.14万</span></li></div>
+	<div id="lli4"><li class="list-group-item" style="color:#000; font-size:16px;border-color:#fff; margin-bottom:5px;text-align:left;"><span style="color: #848484; font-style:oblique; font-size:20px;">4 </span> 父子雄兵
+		  <span class="badge" style=" background-color: #ef4238; margin-right:10px;">324.45万</span></li></div>
+	<div id="lli5"><li class="list-group-item" style="color:#000; font-size:16px;border-color:#fff; margin-bottom: 5px;text-align:left;"><span style="color: #848484; font-style:oblique; font-size:20px;">5 </span> 喵星人 
+	      <span class="badge" style=" background-color: #ef4238; margin-right:10px;">285.16万</span></li></div>
+	<div id="lli6"><li class="list-group-item" style="color:#000; font-size:16px; border-color:#fff; margin-bottom: 5px;text-align:left;"><span style="color: #848484; font-style:oblique; font-size:20px;">6 </span> 变形金刚5：最后的骑士
+		  <span class="badge" style=" background-color: #ef4238; margin-right:10px;">244。17万</span></li></div>
+	<div id="lli7"><li class="list-group-item" style="color:#000; font-size:16px;border-color:#fff; margin-bottom: 5px;text-align:left;"><span style="color: #848484; font-style:oblique; font-size:20px;">7 </span>闪光少女 
+	      <span class="badge" style=" background-color: #ef4238; margin-right:10px;">244。17万</span></li></div>
+	<div id="lli8"><li class="list-group-item" style="color:#000; font-size:16px;border-color:#fff; margin-bottom: 5px;text-align:left;" ><span style="color: #848484; font-style:oblique; font-size:20px;">8 </span> 绣春刀·修罗战场
+	      <span class="badge" style=" background-color: #ef4238; margin-right:10px;">244。17万</span></li></div>
+	<div id="lli9"><li class="list-group-item" style="color:#000; font-size:16px;border-color:#fff; margin-bottom: 5px;text-align:left;" ><span style="color: #848484; font-style:oblique; font-size:20px;">9 </span> 京城81号II
+	      <span class="badge" style=" background-color: #ef4238; margin-right:10px;">244。17万</span></li></div>
+	<div id="lli10"><li class="list-group-item" style="color:#000; font-size:16px; border-color:#fff; margin-bottom: 5px;text-align:left;" ><span style="color: #848484; font-style:oblique; font-size:20px;">10 </span> 青禾男高
+	      <span class="badge" style=" background-color: #ef4238; margin-right:10px;">244。17万</span></li></div>
+          <div id="lli10"><li class="list-group-item" style="color:#000; font-size:16px;border-color:#fff; margin-bottom: 5px;text-align:left;"><span style="color: #848484; font-style:oblique; font-size:20px;">11 </span> 青禾男高
+	      <span class="badge" style=" background-color: #ef4238; margin-right:10px;">244。17万</span></li></div>
+	</ul>
+    
+        <p class="biao" id="section-1" style="width:100%; margin-top:170px;">
+	   <span style="color:#2DB3F8;"> <img  src="img/4.png" alt="cup" style="width:30px; height:40px; margin-left:-270px;">即将上映 <span class="glyphicon glyphicon-chevron-right"></span></span>
+	   <span style="float:right; color:#FFB400;margin-right:-30px; margin-top:10px;"> <img src="img/33.png" alt="cup" style="width:40px; height:50px; ">最受期待</span>
+	   </p>
+		
+		<br>
+	<ul  class="biao" style="margin-left:-250px;" >
+		   <div class="w3l-movie-gride-agile w3l-movie-gride-agile1"><li><img  title="album-name" class="img-responsive"  src="img/t1.png" alt="cup"></li>
+		  <a href="#"> <li class="uum"> 让爱活下去<div class="uum1"><span class="glyphicon glyphicon-play-circle"></span>预告</div><div class="uum2">预售</div></li></a></div>
+	</ul>
+	<ul  class="biao">
+		   <div class="w3l-movie-gride-agile w3l-movie-gride-agile1"><li><img  title="album-name" class="img-responsive"  src="img/t2.png" alt="cup"></li>
+		  <a href="#"> <li class="uum"> 战狼2<div class="uum1"><span class="glyphicon glyphicon-play-circle"></span>预告</div><div class="uum2">预售</div></li></a></div>
+	</ul>
+	<ul  class="biao">
+		   <div class="w3l-movie-gride-agile w3l-movie-gride-agile1"><li><img src="img/t3.png" alt="cup"></li>
+		  <a href="#"> <li class="uum"> 建军大业<div class="uum1"><span class="glyphicon glyphicon-play-circle"></span>预告</div><div class="uum2">预售</div></li></a></div>
+	</ul>
+	<ul  class="biao">
+		   <div class="w3l-movie-gride-agile w3l-movie-gride-agile1"><li><img src="img/t4.png" alt="cup"></li>
+		   <a href="#"> <li class="uum">大耳朵图图<div class="uum1"><span class="glyphicon glyphicon-play-circle"></span>预告</div><div class="uum2">预售</div></li></a></div>
+	</ul><br>
+	<ul  class="biao" style="margin-left:-250px;">
+		   <div class="w3l-movie-gride-agile w3l-movie-gride-agile1"><li><img src="img/t5.png" alt="cup"></li>
+		   <a href="#"> <li class="uum"> 豆福传<div class="uum1"><span class="glyphicon glyphicon-play-circle"></span>预告</div><div class="uum2">预售</div></li></a></div>
+	</ul>
+	<ul  class="biao">
+		   <div class="w3l-movie-gride-agile w3l-movie-gride-agile1"><li><img src="img/t6.png" alt="cup"></li>
+		   <a href="#"> <li class="uum"> 玲珑井<div class="uum1"><span class="glyphicon glyphicon-play-circle"></span>预告</div><div class="uum2">预售</div></li></a></div>
+	</ul>
+	<ul  class="biao">
+		   <div class="w3l-movie-gride-agile w3l-movie-gride-agile1"><li><img src="img/t7.png" alt="cup"></li>
+		   <a href="#"> <li class="uum"> 夜半凶铃<div class="uum1"><span class="glyphicon glyphicon-play-circle"></span>预告</div><div class="uum2">预售</div></li></a></div>
+	</ul>
+	<ul  class="biao">
+		   <div class="w3l-movie-gride-agile w3l-movie-gride-agile1"><li><img src="img/t8.png" alt="cup"></li>
+		 <a href="#"> <li class="uum"> 和田玉传奇<div class="uum1"><span class="glyphicon glyphicon-play-circle"></span>预告</div><div class="uum2">预售</div></li></a></div>
+	</ul>
+		
+		<ul class="list-group" style="width:340px; height:440px; margin-left:580px; margin-top:-650px; border-color:#ef4238; text-align:left;">
+	<div id="lli1"><li class="list-group-item" style="color:#000; font-size:16px; border-color:#fff; margin-bottom:5px;text-align:left;border:1px solid #eaeaea;"><img src="img/t9.png"> 
+         <p ><span style="font-size:18px; margin-top:-150px; float:right;">三生三世十里桃花</span><span style="color:#CCC; float:right; margin-top:-120px;">上映时间：2017-08-03</span><span style="color:#FFB400;margin-right:10px; font-weight:100; font-size:13px; float:right; margin-top:-90px; margin-right:40px;">2020.26万人想看</span></p>
+	     </li></div>
+	<div id="lli2"><li class="list-group-item" style="color:#000; font-size:16px; border-color:#fff; margin-bottom:5px;text-align:left; margin-left:-20px; width:190px;"> <img src="img/t10.png"> <p>战狼2</p> <p style="color:#FFB400;font-size:13px;">1980.26万人想看</p></li></div>
+	<div id="lli3"><li class="list-group-item" style="color:#000; font-size:16px;border-color:#fff; margin-bottom: 5px;text-align:left; float:right; width:190px; margin-top:-210px; margin-right:-20px;"><img src="img/t11.png"> <p>蜘蛛侠：英雄归来<p style="color:#FFB400;font-size:13px;">1760.26万人想看</p></div>
+	<div id="lli4"><li class="list-group-item" style="color:#000; font-size:16px;border-color:#fff; margin-bottom:5px;text-align:left;"><span style="color: #848484; font-style:oblique; font-size:20px;">4 </span> 猩球崛起3：终极之战
+		  <span style="color:#FFB400;margin-right:10px; font-weight:100; font-size:13px; float:right; margin-right:10px;">324.45万想看</span></li></div>
+	<div id="lli5"><li class="list-group-item" style="color:#000; font-size:16px;border-color:#fff; margin-bottom: 5px;text-align:left;"><span style="color: #848484; font-style:oblique; font-size:20px;">5 </span> 建军大业 
+	     <span style="color:#FFB400;margin-right:10px; font-weight:100; font-size:13px; float:right; margin-right:10px;">215.45万想看</span></li></div>
+	<div id="lli6"><li class="list-group-item" style="color:#000; font-size:16px; border-color:#fff; margin-bottom: 5px;text-align:left;"><span style="color: #848484; font-style:oblique; font-size:20px;">6 </span> 银魂 真人版
+		 <span style="color:#FFB400;margin-right:10px; font-weight:100; font-size:13px; float:right; margin-right:10px;">206.95万想看</span></li></div>
+	<div id="lli7"><li class="list-group-item" style="color:#000; font-size:16px;border-color:#fff; margin-bottom: 5px;text-align:left;"><span style="color: #848484; font-style:oblique; font-size:20px;">7 </span>心理罪 
+	     <span style="color:#FFB400;margin-right:10px; font-weight:100; font-size:13px; float:right; margin-right:10px;">144.32万想看</span></li></div>
+	</ul>
+    
+    <p class="biao" id="section-3" style="width:100%; margin-top:250px;"> <span style="color:#59acac; margin-top:70px;"> <img  src="img/4.png" alt="cup" style="width:30px; height:40px; margin-left:-270px;">热播电影 <span class="glyphicon glyphicon-chevron-right"></span></span> <span style="float:right; color:#FF8D1B; margin-right:2px; margin-top:20px;"> <img src="img/33.png" alt="cup" style="width:40px; height:50px; ">TOP100</span>
+	<span style="font-size:12px; color:#000; margin-top:50px;"><a href="#">爱情</a><a href="#"> 喜剧</a> <a href="#">动作</a> <a href="#">恐怖</a><a href="#"> 动画</a>  <p class="bian" style="margin-left:-250px;">  <img src="img/301.png"></p>
+	<ul  class="biao">
+		   <div class="w3l-movie-gride-agile w3l-movie-gride-agile1"><li><img src="img/302.png" alt="cup"></li>
+		</ul>
+	<ul  class="biao">
+		   <div class="w3l-movie-gride-agile w3l-movie-gride-agile1"><li><img src="img/303.png" alt="cup"></li>
+		</ul><br>
+	<ul  class="biao"style="margin-left:-250px;">
+		   <div class="w3l-movie-gride-agile w3l-movie-gride-agile1"><li><img src="img/304.png" alt="cup"></li>
+		</ul>
+	<ul  class="biao" style="margin-left:8px;">
+		   <div class="w3l-movie-gride-agile w3l-movie-gride-agile1"><li><img src="img/305.png" alt="cup"></li>
+		</ul>
+	<ul  class="biao">
+		   <div class="w3l-movie-gride-agile w3l-movie-gride-agile1"><li><img src="img/306.png" alt="cup"></li>
+		</ul>
+	<ul  class="biao"  style="margin-left:28px;">
+		   <div class="w3l-movie-gride-agile w3l-movie-gride-agile1"><li><img src="img/308.png" alt="cup"></li>
+		</ul>
+    
+    <ul class="list-group" style="width:340px; height:440px; margin-left:580px; margin-top:-520px; border-color:#59acac;">
+	<div id="lli1"><li class="list-group-item" style="color:#000; font-size:16px; border-color:#fff; margin-bottom:5px;text-align:left; margin-top:-110px;"><img src="img/309.png"> 霸王别姬
+	     <span class="badge" style=" background-color: #FFB400;margin-right:10px; margin-top:25px;">9.6分</span></li></div>
+	<div id="lli2"><li class="list-group-item" style="color:#000; font-size:16px;  border-color:#fff; margin-bottom:5px;text-align:left;"><span style="color:#FF8D1B; font-style:oblique; font-size:20px;">2 </span>肖申克的救赎
+	      <span class="badge" style=" background-color: #FFB400; margin-right:10px;">9.5分</span></li></div>
+	<div id="lli3"><li class="list-group-item" style="color:#000; font-size:16px; border-color:#fff; margin-bottom: 5px;text-align:left;"><span style="color:#FF8D1B; font-style:oblique; font-size:20px;">3 </span> 罗马假日
+	      <span class="badge" style=" background-color: #FFB400;  margin-right:10px;">9.1分</span></li></div>
+	<div id="lli4"><li class="list-group-item" style="color:#000; font-size:16px; border-color:#fff; margin-bottom:5px;text-align:left;"><span style="color: #848484; font-style:oblique; font-size:20px;">4 </span> 这个杀手不太冷
+		  <span class="badge" style=" background-color: #FFB400; margin-right:10px;">9.5分</span></li></div>
+	<div id="lli5"><li class="list-group-item" style="color:#000; font-size:16px; border-color:#fff; margin-bottom: 5px;text-align:left;"><span style="color: #848484; font-style:oblique; font-size:20px;">5 </span> 阿甘正传
+	      <span class="badge" style=" background-color: #FFB400; margin-right:10px;">9.4分</span></li></div>
+	<div id="lli6"><li class="list-group-item" style="color:#000; font-size:16px; border-color:#fff; margin-bottom: 5px;text-align:left;"><span style="color: #848484; font-style:oblique; font-size:20px;">6 </span> 泰坦尼克号
+		  <span class="badge" style=" background-color: #FFB400; margin-right:10px;">9.5分</span></li></div>
+	<div id="lli7"><li class="list-group-item" style="color:#000; font-size:16px; border-color:#fff; margin-bottom: 5px;text-align:left;"><span style="color: #848484; font-style:oblique; font-size:20px;">7 </span> 教父
+	      <span class="badge" style=" background-color: #FFB400; margin-right:10px;">9.3分</span></li></div>
+	<div id="lli8"><li class="list-group-item" style="color:#000; font-size:16px; border-color:#fff; margin-bottom: 5px;text-align:left;" ><span style="color: #848484; font-style:oblique; font-size:20px;">8 </span> 龙猫
+	      <span class="badge" style=" background-color: #FFB400; margin-right:10px;">9.2分</span></li></div>
+	<div id="lli9"><li class="list-group-item" style="color:#000; font-size:16px; border-color:#fff; margin-bottom: 5px;text-align:left;" ><span style="color: #848484; font-style:oblique; font-size:20px;">9 </span> 唐伯虎点秋香
+	      <span class="badge" style=" background-color: #FFB400; margin-right:10px;">9.2分</span></li></div>
+	
+	</ul>
+
+  
+
+  
+   </div>
+    <!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document" style=" width:400px; height:500px">
+	<div class="modal-content">
+	  <div class="modal-header" style=" background-color: #ef4238; ">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<h4 class="modal-title" id="myModalLabel"><p style="color:#FFF">登陆</p></h4>
+	  </div>
+	  <div class="modal-body">
+				  <script type="text/javascript">
+					$(function(){
+						$("#xiaoshi").hide(); 
+						
+						$("#deng").click(function(){ 
+							var username = $("#username").val();
+							var password = $("#password").val();
+							 $.ajax({
+							 type: "POST",
+				             url: "UserController?op=login",
+				             data:  {
+								    "username": username,
+								    "password": password
+							},
+				             dataType: "json",
+				             success: function(data){
+				            	 var res = JSON.stringify(data);
+									if(res.indexOf("exist")>=0){
+										$("#xiaoshi").show();
+										alert("success");										
+									}
+								}
+							
+							 });	
+						});
+						
+						$("#deng1").click(function(){
+							var x = document.getElementById("username").val();
+							alert(x);
+						});
+					});
+					</script>
+				<form>  
+					<div class="form-group">  
+						<label  for="recipient-name" class="control-label">用户名:</label>  
+						<input  type="text" class="form-control" id="username" placeholder="请输入你的用户名" style="width:250px">  
+					</div>  
+					<div class="form-group">  
+						<label for="message-text" class="control-label">密码:</label>  
+						<input  type="password" 
+						class="form-control" id="password" placeholder="请输入你的密码" style=" width:250px">  
+					</div>
+					<div style="float:right; margin-top:-125px">
+					   <img src="img/lo.png">
+					</div>
+					<input  id="deng"  type="button" value="提交" class="btn btn-primary" style="float:right; background-color:#59ACAC;">  
+				</form>
+					<input  id="deng1"  type="submit" value="提交ssss" class="btn btn-primary" style="float:right; background-color:#59ACAC;">  
+	  </div>
+	  <div class="modal-footer">
+	  </div>
+	</div>
+	</div>
+	</div>
+
+
+
+	   
+
+
+        <!-- Scripts for jQuery and the plugin -->
+        <script src="js/booNavigation.js"></script>
+        <script>
+        (function() {
+
+            /**
+             * This is the call we have to do to execute
+             * the plugin giving a custom params
+             */
+            $('#booNavigation').booNavigation({
+                slideSpeed: 400
+            });
+
+            $('#booNavigationTwo').booNavigation({
+                slideSpeed: 200
+            });
+
+        })();
+
+        </script>
+        
+        
+        <footer style=" width:100%; margin-top:1480px; color:#FFF;">
+	<div id="footer" >
+	<div>
+	<a href="#">
+	<center > <div style="width:100%; height:70px; background-color:#FFF;border-top: 1px solid  #CCC; border-top-style:dashed;"><img alt="logo" src="img/02.png" style="width: 200px; height:70px;"></div>
+	</center>
+
+	</a>
+	</div>
+	<div class="div1">
+	<ul>
+	<center>
+    <br>
+    <br>
+	<li><a href="#">加入我们 |</a></li>
+	<li><a href="#">联系我们 |</a></li>
+	<li><a href="#">关于我们 |</a></li>
+	<li><a href="#">帮助中心 |</a></li>
+	<li><a href="#">网站合作 |</a></li>
+	<li><a href="#">问题反馈 |</a></li>
+	<li><a href="#">网站地图 |</a></li>
+	<li><a href="#">隐私政策 |</a></li>
+	<br>
+	<br>
+	<li><a href="#">关注我们  </a></li>
+	</center>
+	<li>
+	<span style="font-size: 15px;color: black;float: right;margin-right: 60px;">微信公众号  &nbsp;&nbsp;&nbsp; 微信客服号</span></li>
+	<br>
+	<center>
+	<li>cup&nbsp; cup有限公司Copyright 2017-2017 Mtime.com Inc. All rights reserved.</li></center>
+	</ul>
+	</div>
+	<div>
+	<a href="#">
+	<img alt="erweima" src="img/wechat.png" style="width: 100px; float: right;margin-right: 150px;margin-top: -28px;">
+	<img alt="erweima" src="img/1.png" style="width: 100px; float: right;margin-right: -210px;margin-top: -28px;">
+	</a>
+	</div>
+	</div>
+	<div class="div1">
+	<ul>
+	<center>
+	<li><a href="#"><span style="font-size:10px; margin-left: 250px;">京ICP证00000号</span></a></li>
+	<li><a href="#"><span style="font-size:10px; ">网络文化经营许可证</span></a></li>
+	<li><a href="#"><span style="font-size:10px;">京公网安备：00000000000号</span></a></li>
+	<li><a href="#"><span style="font-size:10px;">网络视听许可证0000000号</span></a></li>
+	</center>
+	</ul>
+	</div>
+	</footer>
+			
+</body>
+</html>

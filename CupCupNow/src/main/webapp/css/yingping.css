@@ -1,0 +1,38 @@
+*{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+	color:#3377BC;
+}
+a:hover{
+	width:10px;
+	height:5px;
+	color:#ffffff;
+	background-color:#3377BC;
+}
+#section{
+	width:945px;
+	margin:0 auto;
+}
+section{
+	height: 850px;
+	width:945px;
+	line-height: 72px;
+	margin:0 auto;
+}
+#bigbox1{
+	height: 850px;
+	width:594px;
+	float:left;
+}
+#bigbox2{
+	height:850px;
+	width:300px;
+	float:right;
+}
+#box2 li{
+	list-style:none;
+	display:inline;
+}
