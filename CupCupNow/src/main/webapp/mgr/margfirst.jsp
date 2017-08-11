@@ -73,7 +73,7 @@ a {
 }  
   </style>
 </head>
-	<jsp:include page="title.jsp"></jsp:include>
+	<jsp:include page="../public/title.jsp"></jsp:include>
 <body>
 	<div class="div1">
 		<div style="text-align: center; margin-left: -100px;">
@@ -162,7 +162,7 @@ a {
 	</div>
 	<div class="footer">
 		<iframe frameborder=0 width="100%" height="320px" scrolling="no"
-			src="footer.html"></iframe>
+			src="../public/footer.html"></iframe>
 
 	</div>
 	<script>

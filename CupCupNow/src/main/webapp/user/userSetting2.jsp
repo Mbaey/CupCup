@@ -12,7 +12,7 @@
 <link rel="shortcut icon" href="imgs/my.ico">
 <script src="../js/jquery-1.8.2.min.js"></script>
 </head>
-		<jsp:include page="title.jsp"></jsp:include>
+		<jsp:include page="../public/title.jsp"></jsp:include>
 <body>
 	<div class="div1">
 		<div style="width: 150px;; height: 650px; border: 1px solid #E6E6FA;">
@@ -76,8 +76,7 @@
 	</div>
 	<div class="footer">
 		<iframe frameborder=0 width="100%" height="320px" scrolling="no"
-			src="../footer.html"></iframe>
-
+			src="../public/footer.html"></iframe>
 	</div>
 </body>
 </html>

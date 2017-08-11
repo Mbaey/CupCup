@@ -26,7 +26,6 @@ import service.impl.UserServiceImpl;
 import utils.JiaJieMi;
 import utils.MyConstant;
 
-
 @MultipartConfig
 @WebServlet("/user/deleteController")
 public class deleteController extends HttpServlet {
@@ -35,23 +34,23 @@ public class deleteController extends HttpServlet {
 	private static UserService userService = new UserServiceImpl();
 	private static CommentService commentService = new CommentServiceImpl();
 	private static TicketService ticketService = new TicketServiceImpl();
-   
-    public deleteController() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
 
+	public deleteController() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		doPost(request, response);
 	}
 
-	
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
 		String op = request.getParameter("op");
 		switch (op) {
 		case "userping":
-			userping(request, response);	
+			userping(request, response);
 			break;
 		case "deleteping":
 			deletecomment(request, response);
@@ -67,42 +66,39 @@ public class deleteController extends HttpServlet {
 			int u_id = Integer.parseInt(u_idstr);
 			try {
 				int res = ticketService.deleteTicketsWithu_id(u_id);
-				if(res == 1){
+				if (res == 1) {
 					request.setAttribute("yes", "yes");
 					System.out.println("ff");
-					
+
 					request.getRequestDispatcher("userSetting2.jsp").forward(request, response);
-				}else{
+				} else {
 					System.out.println("no");
 				}
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			
 
 		default:
 			break;
 		}
 	}
 
-
 	private void setting(HttpServletRequest request, HttpServletResponse response)
 			throws IOException, ServletException {
-		
+
 		try {
 			User user = (User) request.getSession().getAttribute("user");
-			String im = request.getParameter("file");
-			System.out.println(im);
+//			为了测试file获取到了没
+//			String im = request.getParameter("file");
+//			System.out.println(im);
 			Part part = request.getPart("file");
 			if (part != null) {
-				String realPath = getServletContext()
-						.getRealPath("/upload");
-
+				String realPath = getServletContext().getRealPath("/upload");
+				
 				String fileName = UUID.randomUUID().toString();
 				String cd = part.getHeader("Content-Disposition");
-				String suffix = cd.substring(cd.lastIndexOf('.'),
-						cd.length() - 1);
+				String suffix = cd.substring(cd.lastIndexOf('.'), cd.length() - 1);
 				String img = "upload/" + fileName + suffix;
 				part.write(realPath + "/" + fileName + suffix);
 				user.setTouxiang(img);
@@ -125,8 +121,7 @@ public class deleteController extends HttpServlet {
 			}
 			String userpwd = request.getParameter("userpwd");
 			if (!"".equals(userpwd)) {
-				user.setPwd(JiaJieMi.get3DESEncrypt(userpwd,
-						MyConstant.SPKEY));
+				user.setPwd(JiaJieMi.get3DESEncrypt(userpwd, MyConstant.SPKEY));
 			}
 			String tel = request.getParameter("tel");
 			if (!"".equals(tel)) {
@@ -138,37 +133,32 @@ public class deleteController extends HttpServlet {
 			}
 
 			int res = userService.updateUser(user);
-			
+
 			request.getSession().setAttribute("user", user);
-			request.getRequestDispatcher("userSetting1.jsp").forward(
-					request, response);
+			request.getRequestDispatcher("userSetting1.jsp").forward(request, response);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 	}
 
-
 	private void movieshow(HttpServletRequest request, HttpServletResponse response) {
 		HttpSession session = request.getSession();
-		User user = (User)session.getAttribute("user");
+		User user = (User) session.getAttribute("user");
 		try {
-			 Ticket tickets = ticketService.selectTicketsWithu_id(user.getU_id());
+			Ticket tickets = ticketService.selectTicketsWithu_id(user.getU_id());
 			request.setAttribute("tickets", tickets);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		
+
 		try {
-			request.getRequestDispatcher("userSetting2.jsp").forward(request,
-					response);
+			request.getRequestDispatcher("userSetting2.jsp").forward(request, response);
 		} catch (ServletException | IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
-
 
 	private void deletecomment(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -176,41 +166,38 @@ public class deleteController extends HttpServlet {
 		int c_id = Integer.parseInt(c_idstr);
 		int res = 0;
 		try {
-			 res = commentService.deleteCommentbyc_id(c_id);
+			res = commentService.deleteCommentbyc_id(c_id);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		if(res == 1){
+		if (res == 1) {
 			request.setAttribute("yes", "yes");
 			System.out.println("ff");
-			
+
 			request.getRequestDispatcher("userSetting3.jsp").forward(request, response);
-		}else{
+		} else {
 			System.out.println("no");
 		}
 	}
-	private void userping(HttpServletRequest request,
-			HttpServletResponse response)  {
+
+	private void userping(HttpServletRequest request, HttpServletResponse response) {
 		HttpSession session = request.getSession();
-		User user = (User)session.getAttribute("user");
+		User user = (User) session.getAttribute("user");
 		try {
-			List<Comment> comment =  commentService.selectCommentWithu_id(user.getU_id());
+			List<Comment> comment = commentService.selectCommentWithu_id(user.getU_id());
 			request.setAttribute("comment", comment);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		
+
 		try {
-			request.getRequestDispatcher("userSetting3.jsp").forward(request,
-					response);
+			request.getRequestDispatcher("userSetting3.jsp").forward(request, response);
 		} catch (ServletException | IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
-
 
 }

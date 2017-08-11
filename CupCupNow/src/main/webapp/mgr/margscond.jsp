@@ -73,7 +73,7 @@ a {
 }  
   </style>
 </head>
-	<jsp:include page="title.jsp"></jsp:include>
+	<jsp:include page="../public/title.jsp"></jsp:include>
 
 <body>
 	<div class="div1">
@@ -144,11 +144,7 @@ a {
        </form>
 			</div>
 			
-			<div class="footer">
-		<iframe frameborder=0 width="100%" height="320px" scrolling="no"
-			src="footer.html"></iframe>
-
-	</div>
+	
 			<script>
 			
 			$(".input-group").click(function(){
@@ -163,6 +159,9 @@ a {
 			</div>
 		</div>
 	</div>
-	
+	<div class="footer">
+		<iframe frameborder=0 width="100%" height="320px" scrolling="no"
+			src="../public/footer.html"></iframe>
+	</div>
 </body>
 </html>

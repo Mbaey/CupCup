@@ -8,6 +8,9 @@
   	 导入项目的时候总会报错，
   	 然后我用了逆向思维，既然一开始导入不对，不如从对的基础上来
   	我干脆新建了一个maven项目往里面考代码
+  	
+  	注意点：
+  	1.web.xml可能会忘了copy！！
   -->
   <version>0.0.1-SNAPSHOT</version>
   <name>CupCup Maven Webapp</name>
@@ -77,6 +80,7 @@
 			<artifactId>commons-io</artifactId>
 			<version>1.3.2</version>
 		</dependency>
+	
 
   </dependencies>
   <build>

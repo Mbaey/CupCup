@@ -14,7 +14,7 @@ a {
 </head>
 <jsp:include page="title.jsp"></jsp:include>
 <body>
-	<div style="height:500px; background-color: #F1F7F7">
+	<div style="height: 500px; background-color: #F1F7F7">
 		<div style="width: 70%; margin: 0px auto;">
 			<div
 				style="width: 20%; border: 1px solid #999; font-size: 20px; text-align: center; display: inline-block;">

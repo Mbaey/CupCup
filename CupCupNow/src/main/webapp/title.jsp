@@ -7,9 +7,18 @@
         <title>My boo Navigation</title>
         <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/booNavigation.css">
+        
+        
+        <link href="bootstrap\css\bootstrap.min.css" rel="stylesheet">
+		<script src="bootstrap\js\jquery.min.js"></script>
+    	<script src="bootstrap\js\bootstrap.min.js"></script>
+    	<!-- 
        	<link href="bootstrap\css\bootstrap.min.css" rel="stylesheet">
 		<script src="bootstrap\js\jquery.min.js"></script>
 	    <script src="bootstrap\js\bootstrap.min.js"></script>
+	    <script src="http://www.jq22.com/jquery/1.11.1/jquery.min.js"></script>
+    	 -->
+	    
     <style type="text/css">
 	    header a:hover{
 			color:#ef4238;
@@ -162,7 +171,7 @@
                         </ul>
                     </li>
                     <li class="navItem">
-                     <a href="#" title="First Item"><span>电影资讯</span></a>
+                     <a href="movieNews.jsp" title="First Item"><span>电影资讯</span></a>
                     </li>
                       <li class="navItem">
                      <a href="#" title="First Item"><span>热门预告</span></a>
@@ -210,7 +219,7 @@
 	</div>
 
  
- <script src="http://www.jq22.com/jquery/1.11.1/jquery.min.js"></script>
+
         <script src="js/booNavigation.js"></script>
         <script>
         (function() {

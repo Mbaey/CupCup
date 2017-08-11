@@ -7,11 +7,11 @@
 <title>个人设置-基本设置</title>
 <link rel="stylesheet" href="css/grsz.css" />
 <link rel="stylesheet" href="../css/booNavigation.css">
-<link rel="bookmark"   type="image/x-icon"  href="imgs/my.ico"/>
+<link rel="bookmark" type="image/x-icon" href="imgs/my.ico" />
 <link rel="shortcut icon" href="imgs/my.ico">
 <script src="../js/jquery-1.8.2.min.js"></script>
 </head>
-	<jsp:include page="title.jsp"></jsp:include>
+<jsp:include page="../public/title.jsp"></jsp:include>
 <body>
 	<div class="div1">
 		<div style="width: 150px;; height: 650px; border: 1px solid #E6E6FA;">
@@ -48,22 +48,18 @@
 				<h2 style="font-size: 19px; color: #FF6347; text-align: center">
 					<br />基本设置
 				</h2>
-				<br>
-				<br>
-				<br>
+				<br> <br> <br>
 				<form action="deleteController?op=Setting" method="post"
 					enctype="multipart/form-data">
 					<div style="float: left margin-top: -20px;">
 						<img src="../img/sz1.png"
 							style="width: 200px; height: 200px; margin-left: 50px;" /> <br>
-						<br>
-						<br>
+						<br> <br>
 						<div class="upfilebox" style="width: 375px; height: 200px;">
 							<div style="width: 200px; height: 200px; margin-top: -150px;">
-								 <img src="" id="img0"
+								<img src="" id="img0"
 									style="width: 200px; height: 200px; margin-left: 50px; margin-top: -100px">
-								<br> <br> 
-								<label>上传图片 <input name="file"
+								<br> <br> <label>上传图片 <input name="file"
 									id="file0" multiple="multiple" type="file"
 									style="display: inline-block;" />
 
@@ -90,12 +86,15 @@
 							name="userpwd" type="password" /> <br /> <br />
 						电&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;话:&nbsp;&nbsp;&nbsp; <input
 							style="width: 200px; height: 20px;" name="tel" type="text" /> <br>
-							<br>
-						
+						<br>
+
 						邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱:&nbsp;&nbsp;&nbsp; <input
 							style="width: 200px; height: 20px;" name="email" type="text" />
-						
-						<br><br><input type="submit" value="提交" class="sth" style="margin-top: -10px;">
+
+						<br>
+						<br>
+						<input type="submit" value="提交" class="sth"
+							style="margin-top: -10px;">
 				</form>
 
 			</div>
@@ -109,8 +108,7 @@
 	</div>
 	<div class="footer">
 		<iframe frameborder=0 width="100%" height="320px" scrolling="no"
-			src="../footer.html"></iframe>
-
+			src="../public/footer.html"></iframe>
 	</div>
 	<script>
 		$("#file0").change(function() {

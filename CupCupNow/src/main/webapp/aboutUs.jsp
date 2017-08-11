@@ -18,27 +18,78 @@
 </style>
 <jsp:include page="title.jsp"></jsp:include>
 </head>
-<body>
-	<div style="width: 70%; margin: 0px auto">
-		<h3>关于卡噗</h3>
-		<div style="width: 100%; height: 1px; background-color: #999"></div>
-		<p class="sub">公司简介:</p>
-		<p class="font">2017年至今，卡噗秉承服务大众的理念，与众多地产商携手建造了200家连锁影院（地图），舒适便捷年轻时尚是这些影院共有的标签
-			卡噗不仅见证了中国电影产业的复兴，也助力了中国商业地产的繁荣。</p>
-		<p class="sub">愿望:</p>
-		<p class="font">人人看得到电影，人人看得好电影</p>
-		<p class="font">让我们</p>
-		<p class="font">用便捷友好的服务，</p>
-		<p class="font">带来您轻松感性的观影体验。 </p>
-		<p class="font">让观众 </p>
-		<p class="font">以合理的电影票价，  </p>
-		<p class="font">享受声光编织的梦境。 </p>
-		<p class="sub">经营愿望:</p>
-		<p class="font">卡噗吸引目标客群的价值所在 一贯性的合理票价 自主化的购票体系 多样化的渠道业务 覆盖各行业的合作伙伴； </p>
-		<p class="sub">经营策略:</p>
-		<p class="font">一贯性的合理化票价 丰富且有效的营销活动 统一的品质管理，超出预期的个性化 服务与舒适体验 多行业渠道商战略合作，提供多元化购票通道。 </p>
-	</div>
-</body>
+ <body style="background-color:#EFEFEF;">
+	<div style="width:1000px; height:750px;margin-left:200px">
+		<div style="width:1000px;height:300px;font-size:20px;line-height:10px;">
+			<h1 style="text-align:center;margin-bottom:40px;">WHO WE ARE</h1>
+			<div style="width:400px;height:200px;float:left;margin-left:80px">
+				<p style="line-height:25px;font-size:16px;">
+					<span style="font-size:50px;">We</span>
+					are a 年轻的团队却不乏实力。我们设计的这个电影网站，是高仿照豆瓣，猫眼两大电影网站。
+					以这两大网站为框架，加入属于我们自己的构想。打造一个功能完备的电影搜索网站，拥有发表论坛,选座购票等各种强大的功能。
+				</p>
+			</div>
+			<div  style="width:400px;height:200px;float:right;margin-right:80px;">
+				<p style="line-height:25px;font-size:16px;">
+					<span style="font-size:50px;">Our</span>
+					technology is Pythno爬虫技术，Dao设计模式，四层架构，数据库的增删改查，以及前端用到的JavaScript, css。
 
+				</p>
+			</div>
+
+		</div>
+		<div style="width:200px;height:220px;float:left;margin-left:100px;">
+			<img style="height:150px;width:150px;border-radius:80px;float:left;margin-left:25px;" src="imgs/yang.jpg">
+			<div style="heigt:40px;width:200px;float:right;">
+				<ul  style="list-style:none;line-height:10px;margin-left:-30px;">
+					<li style="text-align:center;">李朝阳</li>
+					<li style="text-align:center;"><p style="font-size:10px;">Creative Director & Designer</p> </li>
+				</ul>
+			</div>
+		</div>
+		<div style="width:200px;height:220px;float:left;margin-left:50px;">
+			<img style="height:150px;width:150px;border-radius:80px;float:left;margin-left:25px;" src="imgs/mo.jpg">
+			<div style="heigt:40px;width:200px;float:right;">
+				<ul  style="list-style:none;line-height:10px;margin-left:-30px;">
+					<li style="text-align:center;">邱馨墨</li>
+					<li style="text-align:center;"><p style="font-size:10px;">Designer</p> </li>
+				</ul>
+			</div>
+		</div>
+		
+
+		<div style="width:200px;height:220px;float:left;margin-left:50px;">
+			<img style="height:150px;width:150px;border-radius:80px;float:left;margin-left:25px;" src="imgs/yue.jpg">
+			<div style="heigt:40px;width:200px;float:right;">
+				<ul  style="list-style:none;line-height:10px;margin-left:-30px;">
+					<li style="text-align:center;">李欣悦</li>
+					<li style="text-align:center;"><p style="font-size:10px;">Designer</p> </li>
+				</ul>
+			</div>
+		</div>
+
+		<div style="width:200px;height:220px;float:left;margin-left:250px;">
+			<img style="height:150px;width:150px;border-radius:80px;float:left;margin-left:25px;" src="imgs/peng.jpg">
+			<div style="heigt:40px;width:200px;;float:right;">
+				<ul  style="list-style:none;line-height:10px;margin-left:-30px;">
+					<li style="text-align:center;">彭蔷薇</li>
+					<li style="text-align:center;"><p style="font-size:10px;">Designer</p> </li>
+				</ul>
+			</div>
+		</div>
+
+		<div style="width:200px;height:220px;float:left;margin-left:50px;">
+			<img style="height:150px;width:150px;border-radius:80px;float:left;margin-left:25px;" src="imgs/yuan.png">
+			<div style="heigt:40px;width:200px;float:right;">
+				<ul  style="list-style:none;line-height:10px;margin-left:-30px;">
+					<li style="text-align:center;">李袁</li>
+					<li style="text-align:center;"><p style="font-size:10px;">Designer</p> </li>
+				</ul>
+			</div>
+		</div>
+		</div>
+
+	</div>
+ </body>
 <jsp:include page="footer.html"></jsp:include>
 </html>

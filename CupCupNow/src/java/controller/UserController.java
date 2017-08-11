@@ -166,8 +166,8 @@ public class UserController extends HttpServlet {
 				// request.getRequestDispatcher("userSetting.jsp").forward(request,
 				// response);
 			} else {
-				response.sendRedirect(redirectUrl);
 				session.removeAttribute(redirectUrl);
+				response.sendRedirect(redirectUrl);
 			}
 		}
 	}
