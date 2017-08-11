@@ -11,5 +11,5 @@
 CupCupNow是一个JavaEE project
 导入到你的eclipse即可
 
-文档与DB也放在了CupCupNow中
+文档与DB可自行查阅
 
