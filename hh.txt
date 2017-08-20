@@ -1,1 +1,74 @@
-313213
+import java.util.Scanner;
+
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int N = scanner.nextInt();
+        int num[] = new int[N];
+        for(int i=0; i<N; i++){
+            num[i] = scanner.nextInt();
+        }
+
+        int A1=0,A2=0,A3=0,A5=0,S4=0;
+        double A4;
+        int countA4=0, count=0;
+        for(int i=0; i<N; i++){
+            int remainder = num[i]%5;
+            if(remainder==0 && num[i]%2==0){
+                A1 = A1 + num[i];
+            }
+            if(remainder==1){
+                if(count%2==0){
+                    A2 = A2 + num[i];
+                }else {
+                    A2 = A2 - num[i];
+                }
+                count++;
+            }
+            if(remainder==2){
+                A3++;
+            }
+            if(remainder==3){
+                S4 = S4 + num[i];
+                countA4++;
+            }
+            if(remainder==4){
+                if(A5<num[i]){
+                    A5=num[i];
+                }
+            }
+        }
+
+
+        if(A1==0){
+            System.out.print("N ");
+        }else {
+            System.out.print(A1+" ");
+        }
+        if(A2==0){
+            System.out.print("N ");
+        }else {
+            System.out.print(A2+" ");
+        }
+        if(A3==0){
+            System.out.print("N ");
+        }else {
+            System.out.print(A3+" ");
+        }
+        if(S4==0){
+            System.out.print("N ");
+        }else {
+            A4 = 1.0*S4/countA4;
+            Math.round(A4);
+            System.out.print(String.format("%.1f",A4)+" ");
+        }
+        if(A5==0){
+            System.out.print("N");
+        }else {
+            System.out.print(A5);
+        }
+
+
+    }
+}
