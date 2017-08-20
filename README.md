@@ -1,7 +1,7 @@
 # CupCup
 
 ##CupCup是
--我们五个人https://mbaey.github.io/
+<a href="https://mbaey.github.io/">我们五个人</a>
 大一暑假
 
 合作做出的项目
