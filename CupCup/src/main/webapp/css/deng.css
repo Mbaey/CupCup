@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */
+body ul li{
+	float:left;
+	padding-right:10px;
+	list-style:none;
+	margin-top:-10px;
+	padding-top:25px;
+	font-size:12px;
+	padding-left:20px;
+	
+}
+a{
+	text-decoration:none;
+	color:#000;
+}
+
+li{
+	list-style:none;
+}
+body ul li:nth-child(1){
+	margin-left:100px;
+}
+body ul{
+	margin-top:-10px;
+	height:42px;
+	margin:0px auto;
+}
+
+.login-left{
+	width:480px;
+	height:370px;
+	float:left;
+	margin-top:30px;
+	border-right: #CCC solid 2px;
+}
+
+.login-right{
+	width:480px;
+	height:200px;
+	float:right;
+	margin-top:-15px;
+}
+
+.login-left ul{
+	height:100%;
+	width:100%;
+}
+
+.den2{
+	margin-top:60px;
+	margin-left:-15px;
+}
+
+.den3{
+	margin-top:180px;
+	margin-left:-280px;
+}
+
+.den4{
+	margin-top:30px;
+}
+
+.den6{
+	margin-left:250px;
+	margin-top:30px;
+}
+
+.den7{
+	margin-left:100px;
+	margin-top:-80px;
+}
+.den8{
+	margin-left:100px;
+	margin-top:-80px;
+}
+.den10{
+	margin-left:100px;
+	margin-top:-80px;
+}
+

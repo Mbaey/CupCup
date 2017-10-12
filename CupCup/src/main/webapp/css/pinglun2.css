@@ -1,0 +1,35 @@
+
+a{
+	text-decoration: none;
+	color:#3377BC;
+	cursor:pointer;
+}
+
+
+#box2{
+	width:220px;
+	height:230px;
+	float:right;
+	margin-top:-200px;
+	margin-left:-50px;
+}
+#juqin{
+	width:980px;
+	height:135px;
+	float:right;
+	margin-top:-40px;
+}
+
+#wenzi{
+	margin-top:-10px;
+	line-height:18px;
+	
+}
+
+#box3{
+	margin-left:160px;
+	margin-top:240px;
+}
+
+
+

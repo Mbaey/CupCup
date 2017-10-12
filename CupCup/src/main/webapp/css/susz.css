@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+.div1 {
+	width: 90%;
+	height: 650px;
+	float: right;
+}
+
+.div2 {
+	width: 650px;
+	height: 650px;
+	margin-right: -670px;
+	margin-top: -260px;
+	float: right;
+	border: 1px solid #E6E6FA;
+}
+
+
+a {
+	text-decoration: none;
+	color: #999;
+}
+
+.sth {
+	width: 170px;
+	height: 40px;
+	background-color: white;
+	color:black;
+	margin-top:30px;
+	margin-left:-70px;
+	border-radius:30px 30px 30px 30px;
+	cursor:pointer;
+	border: 1px solid #ef4238;
+}
+.sth:hover {
+    background-color: #ef4238;
+    color: white;
+}
