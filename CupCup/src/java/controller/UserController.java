@@ -16,9 +16,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
+import javax.servlet.jsp.PageContext;
 import javax.servlet.http.HttpSession;
-
-import com.mysql.fabric.xmlrpc.base.Array;
 
 import bean.User;
 import service.UserService;
@@ -209,15 +208,23 @@ public class UserController extends HttpServlet {
 
 	private void login1(HttpServletRequest request, HttpServletResponse response)
 			throws IOException, ServletException {
-		PrintWriter out = response.getWriter();
+//		PrintWriter out = response.getWriter();
 		String u_name = request.getParameter("username");
 		String pwd = request.getParameter("password");
-
-		if (u_name.equals("cupmgr") && pwd.equals("Aa123456")) {
+		System.out.println(u_name);
+		System.out.println("cupcup".equals(u_name) );
+		System.out.println(pwd);
+		System.out.println( "Aa123456".equals(pwd));
+		System.out.println("cupcup".equals(u_name) && "Aa123456".equals(pwd));
+		if ("cupcup".equals(u_name) && "Aa123456".equals(pwd)) {
 			request.getSession().setAttribute("cupmgr", u_name);
-
 			response.sendRedirect("mgr/margfirst.jsp");
 		}
+//		request.getRequestDispatcher("mgr/margfirst.jsp").forward(request, response);
+//		PageContext.REQUEST.contextPath
+//		System.out.println(request.getContextPath());
+//		response.sendRedirect("CupCup/mgr/margfirst.jsp");
+//		response.sendRedirect("mgr/margfirst.jsp");
 
 	}
 

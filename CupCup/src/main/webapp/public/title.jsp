@@ -53,6 +53,7 @@
 
 	<header>
     <div style="width:100%; background-color: #FFF; height:60px; border-bottom: 1px solid  #CCC; border-bottom-style:dashed;">
+    <a href="../mgr/margfirst.jsp" class="tou">管理员登录</a>
 	    <a href="../aboutUs.jsp" class="tou">联系我们</a>
 	    <a href="../joinUs.jsp" class="tou">加入我们</a>
      	<a href="../connectUs.jsp" class="tou">关于我们</a>   
@@ -82,7 +83,7 @@
 							<li class="divider"></li>
 							 <li style="width:100%;width:30px; margin-right:100px;">
 							<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1" style="background-color:#fff; width:40px;; margin-left:1px; height:20px; border-color:#FFF; margin-top:-15px; color:#ef4238;">
-							<a href="regist.jsp"><span class="glyphicon glyphicon-user"></span> 注册</a></button></li>
+							<a href="../regist.jsp"><span class="glyphicon glyphicon-user"></span> 注册</a></button></li>
 						</ul>
 					</c:if>	    		
 					
@@ -93,12 +94,12 @@
 						</a>
 						 <ul  id="xiaoshi" class="dropdown-menu" style="background-color: #fff; color:#ef4238; width:30px; margin-right:100px;">
 							<li style="width:30px; margin-right:100px;">
-							<a href="user/userSetting1.jsp">
+							<a href="../user/userSetting1.jsp">
 								<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" style="background-color:#fff; width:40px; margin-left:1px; height:20px; border-color:#fff; margin-top:-15px; color:#ef4238;"><span class="glyphicon glyphicon-home"></span>主页</button></li>
 							</a>
 							<li class="divider"></li>
 							 <li style="width:100%;width:30px; margin-right:100px;">
-						    <a href="UserController?op=logout&to=<%=request.getRequestURL().append("?").append(request.getQueryString()).toString() %>">
+						    <a href="../UserController?op=logout&to=<%=request.getRequestURL().append("?").append(request.getQueryString()).toString() %>">
 								<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1" style="background-color:#fff; width:40px;; margin-left:1px; height:20px; border-color:#FFF; margin-top:-15px; color:#ef4238;"><span class="glyphicon glyphicon-user"></span> 注销</button></li>
 							</a>
 						</ul>    

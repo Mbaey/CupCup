@@ -17,6 +17,7 @@ public class SeatDaoImplTest {
 	
 	@Test
 	public void test2() throws SQLException{
+		
 		List<Integer> res = seatDao.selectSeat(1);
 		JSONObject jsonObject = new JSONObject();
 		int m = 0;

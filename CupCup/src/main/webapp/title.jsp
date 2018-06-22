@@ -7,8 +7,7 @@
         <title>My boo Navigation</title>
         <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/booNavigation.css">
-        
-        
+       
         <link href="bootstrap\css\bootstrap.min.css" rel="stylesheet">
 		<script src="bootstrap\js\jquery.min.js"></script>
     	<script src="bootstrap\js\bootstrap.min.js"></script>
@@ -53,6 +52,7 @@
 
 	<header>
     <div style="width:100%; background-color: #FFF; height:60px; border-bottom: 1px solid  #CCC; border-bottom-style:dashed;">
+    <a href="mgr/margfirst.jsp" class="tou">管理员登录</a>
 	    <a href="aboutUs.jsp" class="tou">联系我们</a>
 	    <a href="joinUs.jsp" class="tou">加入我们</a>
      	<a href="connectUs.jsp" class="tou">关于我们</a>   
@@ -71,7 +71,7 @@
 		</div>
         
     <div class="dropdown" style=" list-style: none; float:right; margin-right:20px; margin-top:-53px;">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+    	<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 					<c:if test="${user==null}">
 						<img src="img/97.png" class="img-circle" alt="用户" style="height:50px; width:50px;">
 							 <b class="caret"></b>
@@ -93,7 +93,7 @@
 						</a>
 						 <ul  id="xiaoshi" class="dropdown-menu" style="background-color: #fff; color:#ef4238; width:30px; margin-right:100px;">
 							<li style="width:30px; margin-right:100px;">
-							<a href="user/userSetting1.jsp">
+							<a href="../user/userSetting1.jsp">
 								<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal" style="background-color:#fff; width:40px; margin-left:1px; height:20px; border-color:#fff; margin-top:-15px; color:#ef4238;"><span class="glyphicon glyphicon-home"></span>主页</button></li>
 							</a>
 							<li class="divider"></li>

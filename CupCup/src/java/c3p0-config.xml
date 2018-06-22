@@ -2,7 +2,7 @@
 <c3p0-config>  
     <default-config>  
         <property name="driverClass">com.mysql.jdbc.Driver</property>  
-        <property name="jdbcUrl">jdbc:mysql://localhost:3307/db_cupcup?useSSL=false</property>  
+        <property name="jdbcUrl">jdbc:mysql://localhost:3306/db_cupcup?useSSL=false</property>  
         <property name="user">root</property>  
         <property name="password">root</property>  
           

@@ -22,7 +22,7 @@ public class MovieDaoImplTest {
 
 	@Test
 	public void testSelectMovieByRate() throws SQLException {
-		List<Movie> res = movieDao.selectAPageMovieWithTypeOrderByRate("¾çÇé", 0);
+		List<Movie> res = movieDao.selectAPageMovieWithTypeOrderByRate("¾çÇé", 1);
 		res.forEach(i -> System.out.println(i));
 	}
 	

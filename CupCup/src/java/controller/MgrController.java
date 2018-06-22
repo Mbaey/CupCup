@@ -1,5 +1,6 @@
 package controller;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.SQLException;
@@ -100,6 +101,14 @@ public class MgrController extends HttpServlet {
 			}
 			break;
 		case "insertExcel":
+			
+			String pathname = "/upload";
+			System.out.println(pathname);
+			File fileDir = new File(pathname);
+			if(fileDir.mkdirs()) {
+				System.out.println("创建成果");
+			}
+
 			Part part = request.getPart("excel");
 			String realPath = getServletContext().getRealPath("/upload");
 			

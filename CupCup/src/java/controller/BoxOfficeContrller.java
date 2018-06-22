@@ -42,7 +42,7 @@ public class BoxOfficeContrller extends HttpServlet {
 			break;
 		case "spiderRank":
 			long time = new Date().getTime();
-			String urlStr ="http://www.cbooo.cn/BoxOffice/GetHourBoxOffice?d=" + time;
+			String urlStr ="http://www.cbooo.cn/BoxOffice/GetHourBoxOffice";
 //			System.out.println(urlStr);
 			URL url = new URL(urlStr);    
 	        HttpURLConnection conn = (HttpURLConnection)url.openConnection();    
